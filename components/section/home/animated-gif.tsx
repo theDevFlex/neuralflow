@@ -4,9 +4,6 @@ import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 function Animatedgif() {
   const containerRef = useRef(null);
@@ -37,8 +34,8 @@ function Animatedgif() {
         ref={imageRef}
         src="/image/nf-demo.png"
         alt="Hero"
-        width={1920}
-        height={1080}
+        width={2000}
+        height={2000}
         className="w-auto  -translate-y-14 object-contain opacity-0 lg:absolute lg:bottom-20 lg:left-1/2 lg:h-full lg:-translate-x-1/2 lg:translate-y-0 lg:scale-110"
       />
     </div>

@@ -1,19 +1,66 @@
+"use client";
 import Image from "next/image";
 import { Nodes, Node } from "../../asset/svgs";
 import { TensorFlow } from "../../icons";
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export function Features() {
+  const containerRef = useRef(null);
+  const imageRef = useRef(null);
+  useGSAP(
+    () => {
+      if (!containerRef.current || !imageRef.current) return;
+      gsap.fromTo(
+        imageRef.current,
+        {
+          y: 500,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "back.out(1)",
+          scrollTrigger: {
+            trigger: containerRef.current,
+            start: "top 60%",
+            toggleActions: "play none none reverse",
+            markers: true,
+          },
+        },
+      );
+    },
+
+    { scope: containerRef },
+  );
   return (
-    <div className="-mt-10 flex w-full flex-col items-center gap-10 px-5 lg:mt-0 lg:px-32">
+    <div
+      ref={containerRef}
+      className="-mt-10 flex w-full flex-col items-center gap-10 px-5 lg:mt-0 lg:px-32"
+    >
       {/* 1 */}
       <div className="flex w-full flex-col md:items-center">
         <h2 className="pb-10 text-4xl font-bold">Features</h2>
         <div className="flex w-full flex-col gap-5">
           <h3 className="text-2xl font-bold">Intuitive Model Building</h3>
           <Nodes className="hidden w-full md:flex" />
-          <Node className=" md:hidden" />
+          {/* <Node className=" md:hidden" /> */}
+          <Image
+            ref={imageRef}
+            src="/image/node-masked.png"
+            alt="Masked Layer"
+            width={1920}
+            height={1080}
+            className="m-auto max-w-sm opacity-0 md:hidden"
+          />
         </div>
-        <p className="text-muted-foreground">
+        <p className="mt-4 text-muted-foreground">
           Korem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur,
           magna nec mollis fermentum, libero arcu consequat nisi, non blandit
           ante dolor non leo. Praesent scelerisque urna sed risus vehicula, at
