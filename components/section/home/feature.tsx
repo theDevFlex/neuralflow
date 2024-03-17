@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { Nodes, Node } from "../asset/svgs";
-import { TensorFlow } from "../icons";
+import { Nodes, Node } from "../../asset/svgs";
+import { TensorFlow } from "../../icons";
 
 export function Features() {
   return (
-    <>
+    <div className="-mt-10 flex w-full flex-col items-center gap-10 px-5 lg:mt-0 lg:px-32">
       {/* 1 */}
       <div className="flex w-full flex-col md:items-center">
         <h2 className="pb-10 text-4xl font-bold">Features</h2>
@@ -74,6 +74,6 @@ export function Features() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
