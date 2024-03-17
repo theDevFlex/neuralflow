@@ -1,5 +1,5 @@
 import { ChevronRight, Search } from "lucide-react";
-import { BonnyIcon } from "../icons";
+import { BonnyIcon } from "../../icons";
 
 export function Bonny() {
   return (

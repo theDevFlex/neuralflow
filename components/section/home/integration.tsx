@@ -1,4 +1,4 @@
-import { DashedLine } from "../asset/svgs";
+import { DashedLine } from "../../asset/svgs";
 
 export function Integration() {
   return (

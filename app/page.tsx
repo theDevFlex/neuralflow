@@ -1,20 +1,16 @@
 import { Nodes } from "@/components/asset/svgs";
 import { MainLayout } from "@/components/layout/mainLayout";
-import { Bonny } from "@/components/section/bonny";
-import { Features } from "@/components/section/feature";
-import { Hero } from "@/components/section/hero";
-import { Integration } from "@/components/section/integration";
-import { Button } from "@/components/ui/button";
-import { MoveRight } from "lucide-react";
+import { Bonny } from "@/components/section/home/bonny";
+import { Features } from "@/components/section/home/feature";
+import { Hero } from "@/components/section/home/hero";
+import { Integration } from "@/components/section/home/integration";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <MainLayout className="">
       {/* hero section */}
-      <div className="flex w-full flex-col items-start gap-5 bg-primary px-5 py-20 pb-32 md:items-center">
-        <Hero />
-      </div>
+      <Hero />
 
       {/* demo image/gif section */}
       <div className=" w-full lg:relative lg:h-[70vh] ">
@@ -28,9 +24,7 @@ export default function Home() {
       </div>
 
       {/* feature section */}
-      <div className="-mt-10 flex w-full flex-col items-center gap-10 px-5 lg:mt-0 lg:px-32">
-        <Features />
-      </div>
+      <Features />
 
       {/* bonny section */}
       <Bonny />
