@@ -17,9 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <NextAuthProvider>
-        <body className={montserrat.className}>{children}</body>
-      </NextAuthProvider>
+      {/* <NextAuthProvider> */}
+      <body className={montserrat.className}>{children}</body>
+      {/* </NextAuthProvider> */}
     </html>
   );
 }
