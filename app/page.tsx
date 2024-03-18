@@ -10,8 +10,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <MainLayout className="">
-      {/* hero section */}
       <Hero />
+      {/* hero section */}
 
       {/* demo image/gif section */}
       <Animatedgif />

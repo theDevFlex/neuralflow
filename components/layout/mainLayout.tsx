@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Navbar } from "../navbar";
+import { Footer } from "../section/home/footer";
 
 export function MainLayout({
   className,
@@ -18,6 +19,7 @@ export function MainLayout({
       >
         {children}
       </div>
+      <Footer />
     </>
   );
 }

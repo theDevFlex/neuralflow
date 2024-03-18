@@ -38,7 +38,7 @@ export function Features() {
   const imageRef = useRef(null);
 
   return (
-    <div>
+    <div className="px-5 ">
       {/* 1 */}
       <div className="flex w-full flex-col md:items-center">
         <h2 className="pb-10 text-4xl font-bold">Features</h2>
@@ -63,10 +63,9 @@ export function Features() {
           </motion.div>
         </div>
         <p className="mt-4 text-muted-foreground">
-          Korem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur,
-          magna nec mollis fermentum, libero arcu consequat nisi, non blandit
-          ante dolor non leo. Praesent scelerisque urna sed risus vehicula, at
-          maximus mi tincidunt.
+          Craft ML models with a simple click-to-connect framework. Choose
+          layers, tweak settings, and link them to form your network. Design,
+          iterate, and execute models, no coding required.
         </p>
       </div>
 
@@ -79,11 +78,9 @@ export function Features() {
         </div>
         <div className="flex w-full flex-col items-center gap-10 md:gap-2">
           <div className=" flex  flex-col items-start justify-center gap-3 md:flex-row md:items-center md:gap-10">
-            <ScrollArea className="max-w-md rounded-md sm:max-w-xl lg:max-w-4xl">
+            <div className="max-w-xs rounded-md sm:max-w-xl lg:max-w-4xl">
               <Code code={`\`\`\`py \n${code1}`} />
-              <ScrollBar orientation="horizontal" />
-              <ScrollBar orientation="vertical" />
-            </ScrollArea>
+            </div>
             <div className="flex grow flex-col gap-2 md:pb-32">
               <h3 className="text-lg font-bold">Get generated code</h3>
               <p>
@@ -93,7 +90,7 @@ export function Features() {
           </div>
           <div className="flex flex-col items-start gap-3 md:flex-row-reverse md:items-center md:gap-10 xl:-mt-16">
             <div
-              className="z-10 rounded-lg md:shadow-custom"
+              className="z-10 max-w-xs rounded-lg sm:max-w-xl md:shadow-custom"
               // style={{ boxShadow: "-7px -7px 300px white" }}
             >
               <Code code={`\`\`\`py \n${code2}`} />

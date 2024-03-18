@@ -7,9 +7,9 @@ export function Hero() {
       <h2 className="text-4xl  font-medium leading-tight  sm:text-[4rem] md:text-[6rem] lg:text-[8rem]">
         Build, <span className="text-primary-foreground">Integrate,</span> Train
       </h2>
-      <p className="text-primary-foreground">
-        Our platform is in the beta phase and might occasionally encounter
-        errors. Please feel free to report any bugs via our issue tracker.
+      <p className="text-left text-lg font-semibold text-primary-foreground md:text-center">
+        A no code platform to build, integrate and train your machine learning
+        models.
       </p>
       <div className="flex flex-wrap gap-4">
         {/*<Button
