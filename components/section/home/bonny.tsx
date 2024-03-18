@@ -9,16 +9,15 @@ export function Bonny() {
         Bonny, An Ai to help you in the journey
       </h3>
       <p className="max-w-7xl">
-        Korem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur,
-        magna nec mollis fermentum, libero arcu consequat nisi, non blandit ante
-        dolor non leo. Praesent scelerisque urna sed risus vehicula, at maximus
-        mi tincidunt.
+        Bonny is an AI assistant that helps you save time by providing you with
+        automatic node completion or creating and connecting nodes with your
+        prompt.
       </p>
       <span className="flex items-center gap-3 rounded-sm border px-4 py-1 shadow-md md:p-4">
         <Search className="h-10 w-10 md:h-5 md:w-5" />
         <span className="line-clamp-1 text-xs md:text-base">
           Create a 2d Unet architecture with 3 depth layer. The input should be
-          of 128,128,3 and 2 channel output
+          of 128, 128, 3 and 2 channel output
         </span>
         <ChevronRight className="h-10 w-10 md:h-5 md:w-5" />
       </span>

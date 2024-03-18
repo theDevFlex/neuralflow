@@ -15,7 +15,7 @@ function Animatedgif() {
       initial={{ opacity: 0, y: 300 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ type: "spring", stiffness: 100 }}
-      whileHover={{ scale: 1.05 }}
+      // whileHover={{ scale: 1.05 }}
     >
       <Image
         ref={imageRef}
@@ -23,7 +23,7 @@ function Animatedgif() {
         alt="Hero"
         width={2000}
         height={2000}
-        className="w-auto -translate-y-14  object-contain lg:absolute lg:bottom-20 lg:left-1/2 lg:h-full lg:-translate-x-1/2 lg:translate-y-0 lg:scale-110"
+        className="w-auto -translate-y-14 object-contain transition-all duration-300 ease-in-out lg:absolute lg:bottom-20 lg:left-1/2 lg:h-full lg:-translate-x-1/2 lg:translate-y-0 lg:scale-110 lg:hover:scale-125"
       />
     </motion.div>
   );
