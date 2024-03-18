@@ -26,7 +26,7 @@ export function Nodes({
         stroke="#FF6F00"
         initial={{ pathLength: 0 }}
         whileInView={{ pathLength: 1 }}
-        transition={{ type: "spring", stiffness: 50, duration: 2, delay: 1.6 }}
+        transition={{ type: "spring", stiffness: 50, duration: 2, delay: 1 }}
       />
 
       <motion.rect

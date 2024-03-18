@@ -1,5 +1,5 @@
-import { MoveRight } from "lucide-react";
-import { Button } from "../../ui/button";
+import { Button } from "@/components/ui/button";
+import TryAlpha from "./try-alpha.button";
 
 export function Hero() {
   return (
@@ -11,12 +11,16 @@ export function Hero() {
         Our platform is in the beta phase and might occasionally encounter
         errors. Please feel free to report any bugs via our issue tracker.
       </p>
-      <Button
-        className="flex gap-2 border border-secondary-foreground"
-        variant={"secondary"}
-      >
-        Try Now <MoveRight strokeWidth={"1px"} />
-      </Button>
+      <div className="flex flex-wrap gap-4">
+        {/*<Button
+            variant="outline"
+            className="bg-foreground text-background hover:bg-foreground/80 hover:text-background/90"
+            size="lg"
+          >
+            Join Beta Waitlist
+          </Button> */}
+        <TryAlpha />
+      </div>
     </div>
   );
 }
