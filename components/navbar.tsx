@@ -2,6 +2,8 @@ import { cn } from "@/lib/utils";
 import { NFLogo } from "./icons";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { Github } from "lucide-react";
+import Image from "next/image";
 
 export function Navbar({
   className,
@@ -24,9 +26,19 @@ export function Navbar({
           </h2>
         </div>
       </Link>
-      {/* <Button className="border border-primary bg-secondary-foreground text-secondary hover:border hover:border-secondary">
-        Login
-      </Button> */}
+      <Link
+        target="_blank"
+        href="https://github.com/theDevFlex"
+        className="flex items-center justify-center"
+      >
+        <Image
+          src="/image/github-mark-white.svg"
+          alt="github"
+          height={30}
+          width={30}
+          className="h-8 w-8 rounded-full"
+        />
+      </Link>
     </div>
   );
 }
