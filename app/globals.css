@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+pre {
+  padding: 1rem 0;
+  border-radius: 10px;
+}
+
+pre [data-line] {
+  padding: 0 1rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
