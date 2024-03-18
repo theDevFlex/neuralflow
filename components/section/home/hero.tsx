@@ -1,22 +1,26 @@
-import { MoveRight } from "lucide-react";
-import { Button } from "../../ui/button";
+import { Button } from "@/components/ui/button";
+import TryAlpha from "./try-alpha.button";
 
 export function Hero() {
   return (
     <div className="flex w-full flex-col items-start gap-5 bg-primary px-5 py-20 pb-32 md:items-center">
-      <h2 className="text-[4rem] font-medium leading-tight md:text-[8rem]">
+      <h2 className="text-4xl  font-medium leading-tight  sm:text-[4rem] md:text-[6rem] lg:text-[8rem]">
         Build, <span className="text-primary-foreground">Integrate,</span> Train
       </h2>
       <p className="text-primary-foreground">
         Our platform is in the beta phase and might occasionally encounter
         errors. Please feel free to report any bugs via our issue tracker.
       </p>
-      <Button
-        className="flex gap-2 border border-secondary-foreground"
-        variant={"secondary"}
-      >
-        Try Now <MoveRight strokeWidth={"1px"} />
-      </Button>
+      <div className="flex flex-wrap gap-4">
+        {/*<Button
+            variant="outline"
+            className="bg-foreground text-background hover:bg-foreground/80 hover:text-background/90"
+            size="lg"
+          >
+            Join Beta Waitlist
+          </Button> */}
+        <TryAlpha />
+      </div>
     </div>
   );
 }

@@ -65,44 +65,44 @@ export function BonnyIcon({
       <path
         d="M92.0181 73.3857V59.7534H78.3857"
         stroke="white"
-        stroke-width="8"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M112.467 73.3857H71.5696C67.8051 73.3857 64.7534 76.4374 64.7534 80.2019V107.467C64.7534 111.231 67.8051 114.283 71.5696 114.283H112.467C116.231 114.283 119.283 111.231 119.283 107.467V80.2019C119.283 76.4374 116.231 73.3857 112.467 73.3857Z"
         stroke="white"
-        stroke-width="8"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M57.9373 93.8342H64.7534"
         stroke="white"
-        stroke-width="8"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M119.283 93.8342H126.099"
         stroke="white"
-        stroke-width="8"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M102.242 90.426V97.2422"
         stroke="white"
-        stroke-width="8"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M81.7937 90.426V97.2422"
         stroke="white"
-        stroke-width="8"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

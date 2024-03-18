@@ -24,9 +24,9 @@ export function Navbar({
           </h2>
         </div>
       </Link>
-      <Button className="border border-primary bg-secondary-foreground text-secondary hover:border hover:border-secondary">
+      {/* <Button className="border border-primary bg-secondary-foreground text-secondary hover:border hover:border-secondary">
         Login
-      </Button>
+      </Button> */}
     </div>
   );
 }

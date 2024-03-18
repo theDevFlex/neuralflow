@@ -1,6 +1,5 @@
+"use client";
 import Image from "next/image";
-import { Nodes, Node } from "../../asset/svgs";
-import { TensorFlow } from "../../icons";
 import { Code } from "@/components/ui/code";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
@@ -30,19 +29,40 @@ model = nf.getModel(
     api_key=NEURAL_FLOW_API_KEY
 )
 `;
-
+import { useRef } from "react";
+import { motion } from "framer-motion";
+import { Nodes } from "@/components/asset/svgs";
+import { TensorFlow } from "@/components/icons";
 export function Features() {
+  const containerRef = useRef(null);
+  const imageRef = useRef(null);
+
   return (
-    <div className="-mt-10 flex w-full flex-col items-center gap-10 px-5 lg:mt-0 lg:px-32">
+    <div>
       {/* 1 */}
       <div className="flex w-full flex-col md:items-center">
         <h2 className="pb-10 text-4xl font-bold">Features</h2>
         <div className="flex w-full flex-col gap-5">
           <h3 className="text-2xl font-bold">Intuitive Model Building</h3>
           <Nodes className="hidden w-full md:flex" />
-          <Node className=" md:hidden" />
+          {/* <Node className=" md:hidden" /> */}
+          <motion.div
+            className="m-auto w-full max-w-sm md:hidden"
+            initial={{ opacity: 0, y: 300 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", stiffness: 50 }}
+            whileHover={{ scale: 1.05 }}
+          >
+            <Image
+              ref={imageRef}
+              src="/image/node-masked.png"
+              alt="Masked Layer"
+              width={1920}
+              height={1080}
+            />
+          </motion.div>
         </div>
-        <p className="text-muted-foreground">
+        <p className="mt-4 text-muted-foreground">
           Korem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur,
           magna nec mollis fermentum, libero arcu consequat nisi, non blandit
           ante dolor non leo. Praesent scelerisque urna sed risus vehicula, at
@@ -73,7 +93,7 @@ export function Features() {
           </div>
           <div className="flex flex-col items-start gap-3 md:flex-row-reverse md:items-center md:gap-10 xl:-mt-16">
             <div
-              className="md:shadow-custom z-10 rounded-lg"
+              className="z-10 rounded-lg md:shadow-custom"
               // style={{ boxShadow: "-7px -7px 300px white" }}
             >
               <Code code={`\`\`\`py \n${code2}`} />
