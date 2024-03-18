@@ -4,7 +4,7 @@ import { Button } from "../../ui/button";
 export function Hero() {
   return (
     <div className="flex w-full flex-col items-start gap-5 bg-primary px-5 py-20 pb-32 md:items-center">
-      <h2 className="text-[4rem] font-medium leading-tight md:text-[8rem]">
+      <h2 className="text-4xl  font-medium leading-tight  sm:text-[4rem] md:text-[6rem] lg:text-[8rem]">
         Build, <span className="text-primary-foreground">Integrate,</span> Train
       </h2>
       <p className="text-primary-foreground">
