@@ -5,8 +5,8 @@ export function Bonny() {
   return (
     <div className="my-5 flex h-[80vh] w-full flex-col items-center justify-center gap-5 p-5 text-center">
       <BonnyIcon />
-      <h3 className="text-3xl font-bold">
-        Bonny, An Ai to help you in the journey
+      <h3 className="text-xl font-bold md:text-3xl">
+        Bonny, An AI to help you in the journey
       </h3>
       <p className="max-w-7xl">
         Bonny is an AI assistant that helps you save time by providing you with
