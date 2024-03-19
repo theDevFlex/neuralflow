@@ -68,6 +68,55 @@ export function Features() {
           iterate, and execute models, no coding required.
         </p>
       </div>
+
+      <div className="flex w-full flex-col items-center justify-center ">
+        {/* 2 */}
+        <div className="flex w-full flex-col justify-start py-5">
+          <h3 className="mb-10 w-full text-2xl font-bold">
+            Seamless Loading to any environment
+          </h3>
+        </div>
+        <div className="flex w-full flex-col items-center gap-10 md:gap-2">
+          <div className=" flex  flex-col items-start justify-center gap-3 md:flex-row md:items-center md:gap-10">
+            <div className="max-w-xs rounded-md sm:max-w-xl lg:max-w-4xl">
+              <Code code={`\`\`\`py \n${code1}`} />
+            </div>
+            <div className="flex grow flex-col gap-2 md:pb-32">
+              <h3 className="text-lg font-bold">Get generated code</h3>
+              <p>
+                Copy paste the model directly to your desired python environment
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col items-start gap-3 md:flex-row-reverse md:items-center md:gap-10 xl:-mt-16">
+            <div
+              className="z-10 max-w-xs rounded-lg sm:max-w-xl md:shadow-custom"
+              // style={{ boxShadow: "-7px -7px 300px white" }}
+            >
+              <Code code={`\`\`\`py \n${code2}`} />
+            </div>
+            <div className="flex grow flex-col gap-2  md:items-end">
+              <h3 className="text-lg font-bold md:text-right">
+                Directly import your model
+              </h3>
+              <p className="md:text-right">
+                No need to download everytime you edit, Import model from our
+                package
+              </p>
+            </div>
+          </div>
+          {/* 3 */}
+          <div className="items:start flex flex-col gap-10 md:flex-row md:items-center ">
+            <TensorFlow />
+            <div className="flex grow flex-col gap-2">
+              <h3 className="text-lg font-bold">Download model</h3>
+              <p className="">
+                You can also download model in tensorflow supported formats.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

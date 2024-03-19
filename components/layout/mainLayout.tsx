@@ -13,7 +13,7 @@ export function MainLayout({
       <div
         {...props}
         className={cn(
-          "flex min-h-[calc(100vh-5rem)] w-full flex-col items-center gap-5 pb-10",
+          "flex min-h-[calc(100vh-5rem)] w-full flex-col items-center gap-5",
           className,
         )}
       >

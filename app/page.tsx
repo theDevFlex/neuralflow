@@ -6,7 +6,6 @@ import { Hero } from "@/components/section/home/hero";
 import { Integration } from "@/components/section/home/integration";
 import Animatedgif from "@/components/section/home/animated-gif";
 import Image from "next/image";
-import { Features2 } from "@/components/section/home/feature2";
 
 export default function Home() {
   return (
@@ -18,7 +17,6 @@ export default function Home() {
       <Animatedgif />
       {/* feature section */}
       <Features />
-      <Features2 />
 
       {/* bonny section */}
       <Bonny />
